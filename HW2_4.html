@@ -1,0 +1,47 @@
+<!--Calculate the result while satisfying the following requirement-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HW#2_4</title>
+    </head>
+
+    <body>
+        <script>
+            function Add(n1, n2){
+                calculator.operator.value = "+";
+                calculator.result.value = Number(calculator.n1.value) + Number(calculator.n2.value);
+            }
+
+            function Subtract(n1, n2){
+                calculator.operator.value = "-";
+                calculator.result.value = Number(calculator.n1.value) - Number(calculator.n2.value);
+            }
+
+            function Multiply(n1, n2){
+                calculator.operator.value = "x";
+                calculator.result.value = Number(calculator.n1.value) * Number(calculator.n2.value);
+            }
+
+            function Divide(n1, n2){
+                calculator.operator.value = "/";
+                calculator.result.value = Number(calculator.n1.value) / Number(calculator.n2.value);
+            }
+            
+        </script>
+
+        <form name="calculator">
+            <input type="text" name="n1" size="5">
+            <input type="text" name="operator" size="1">
+            <input type="text" name="n2" size="5">
+            =
+            <input type="text" name="result" id="result" size="7" readonly>
+            <br>
+
+            <input type="button" onclick="Add()" value="Add">
+            <input type="button" onclick="Subtract()" value="Subtract">
+            <input type="button" onclick="Multiply()" value="Multiply">
+            <input type="button" onclick="Divide()" value="Divide">
+            <br>
+        </form>
+    </body>
+</html>

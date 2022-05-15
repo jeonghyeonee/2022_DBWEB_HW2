@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HW#2_3</title>
+    </head>
+
+    <body>
+        <script>
+            function getRandom(){
+                return (Math.floor(Math.random()*100))+1;
+            }
+
+            for (var i = 0; i<5; i++){
+                var a = getRandom();
+
+                if (a<50){
+                    alert("Hey, " + a + " is less than 50");
+                }
+
+                else{
+                    alert("Yo, " + a + " is greater than or equal to 50");
+                }
+
+            }
+
+
+        </script>
+    </body>
+</html>
